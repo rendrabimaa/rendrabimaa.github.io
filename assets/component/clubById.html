@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premiere League Info</title>
+    <link rel="stylesheet" href="../css/materialize.min.css" />
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+    <meta name="theme-color" content="#5dbcd2" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav class="teal lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo" id="logo-container">Club Data</a>
+            <a href="../../index.html#clubs" class="sidenav-trigger" data-target="nav-mobile">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+    <!-- body-content start -->
+
+    <div class="container" id="body-content"></div>
+    <!-- For Save button  -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="btnSave">
+            <i class="large material-icons">save</i>
+        </a>
+        <button class="btn-floating btn-large red" id="btnDelete">
+            <i class="large material-icons">delete</i>
+        </button>
+    </div>
+
+
+    <!-- loader -->
+    <div class="container">
+        <div class="row">
+            <div class="col s6 offset-s6">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/idb.js"></script>
+    <script src="../js/db.js"></script>
+    <script src="../js/dom.js"></script>
+    <script src="../js/clubById.js"></script>
+    <script src="../css/style.css"></script>
+</body>
+
+</html>
